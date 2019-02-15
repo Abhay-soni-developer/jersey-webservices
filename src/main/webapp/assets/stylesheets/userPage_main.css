@@ -1,0 +1,262 @@
+/***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+body {
+    background: #F1F3FA;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+  
+  /* Profile container */
+  .profile {
+    margin: 20px 0;
+  }
+  
+  /* Profile sidebar */
+  .profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+    border-radius: 15px 0px 0px 0px;
+  }
+  
+  .profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+  }
+  
+  .profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  
+  .profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+  }
+  
+  .profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+  }
+      
+  .profile-usermenu {
+    margin-top: 30px;
+  }
+  
+  .profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+  }
+  
+  .profile-usermenu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+  }
+  
+  .profile-usermenu ul li.active {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+    padding: 20px;
+    background: #fff;
+    min-height: 460px;
+  }
+
+  .sideBar-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1px;
+  }
+
+  .sideBar-btn:hover {
+    background-color: greenyellow;
+  }
+
+  #user-logout-btn{
+    background-color: rgba(220, 20, 60, 0.562);
+  }
+
+  #user-logout-btn:hover{
+    background-color: crimson;
+  }
+
+  .profile-sidebar div[class*="user"]{
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-sidebar-container{
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 15px 0px 0px 0px;
+  }
+
+  .main-section{
+    background-color:antiquewhite;
+    border: 1px solid transparent;
+    padding: 20px;
+    border-left: 20px solid rgb(241, 243, 250);
+    height: 80vh;
+  }
+
+  .comment-box {
+    height: 100%;
+  }
+
+  .comments-container {
+    background-color: white;
+    display: block;
+    height: 55vh;
+    border: 1px solid transparent;
+    border-radius: 15px 15px 0px 0px;
+    overflow-y: scroll;
+  }
+
+
+  .comment-post-box {
+    margin-top: 10px;
+    height: 15vh;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F1F3FA;
+  }
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 15px;
+
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+textarea{
+  height: 100%;
+  width: 85%;
+  border: none;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+}
+
+.comment-detail {
+  height: 20px;
+  padding: 5px;
+  font-size: 0.8em;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-box {
+ padding: 10px;
+}
+
+.comment {
+  border: 1px solid gainsboro;
+  border-top: 1px solid transparent;
+  margin-bottom: 5px;
+}
+
+.comment-msg-container {
+  margin-top: 15px;
+  padding: 15px;
+  padding-top: 5px;
+}
+
+#cmt-post-btn {
+  height: 100%;
+  width: 100px;
+  background-color: #7dc9f8;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  outline: none;
+  font-weight: bold;
+  color: white;
+}
+
+#cmt-post-btn:hover{
+  background-color: #0f9ef7;
+}

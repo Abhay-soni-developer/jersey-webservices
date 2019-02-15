@@ -20,10 +20,18 @@ import com.abhay.project.webservice.model.Gender;
 import com.abhay.project.webservice.model.User;
 import com.abhay.project.webservice.model.DAOs.UserDAO;
 
-
 @Path("useroperations")
 //all the user related operations are performed here
 public class UserOperations {
+	
+	
+	@GET
+	@Path("/test")
+	@Produces(MediaType.TEXT_PLAIN)
+	//this method lets user add comment to comment list
+	public String test() {
+		return "Created By Abhay Soni";
+	}
 	
 	
 	//this method is to be called when user is logging in
@@ -48,17 +56,18 @@ public class UserOperations {
 							    @FormParam("age") int age, @FormParam("country") String country, 
 							    @FormParam("gender") String gender, @FormParam("pass") String  pass, 
 							    @FormParam("repass") String repass) {
+		boolean status = false;
 		UserDAO.initializeCon();
 		System.out.println(fname);
 		if(ValidateFields.ComparePassAndRepass(pass, repass)) {
 			if(ValidateFields.validatePassword(pass) && ValidateFields.validateEmail(email) &&  ValidateFields.validateAge(age)){
-				UserDAO.registerUser(fname, lname, gender, email, country, age, mobile, pass);
+				status = UserDAO.registerUser(fname, lname, gender, email, country, age, mobile, pass);
+				
 			}else {
-			return false;
+			return status;
 			}
 		}
-		
-		return true;
+		return status;
 	}
 	
 	

@@ -19,7 +19,7 @@ public class ValidateFields {
 	
 	
 	public static boolean ComparePassAndRepass(String pass, String repass) {
-		System.out.println(pass + "  ::  "+ repass);
+//		System.out.println(pass + "  ::  "+ repass);
 		return pass.equals(repass);
 	}
 	

@@ -1,0 +1,196 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.fa-facebook,
+.fa-facebook-square {
+    color: #3b5998
+}
+
+.fa-twitter,
+.fa-twitter-square {
+    color: #00aced
+}
+
+.fa-google-plus,
+.fa-google-plus-square {
+    color: #dd4b39
+}
+
+.fa-chess-king {
+    color: gold;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: url(../images/web-background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-box {
+    background-color: rgba(255, 247, 247, 0.514);
+    padding: 20px 30px;
+    border-radius: 5px;
+    min-width: 400px;
+}
+
+.log-box>form input[type="email"],
+.log-box>form input[type="password"] {
+    border: none;
+    outline: 2px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
+
+.log-box>form input[type="email"]::placeholder,
+.log-box>form input[type="password"]::placeholder {
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+}
+
+.log-box>form>div {
+    margin-top: 20px;
+}
+
+.log-box>form>div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.log-box>form>div:last-child .btn {
+    font-family: 'Staatliches', cursive;
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    background-color: #bd533b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.log-box>form>div:last-child .btn:hover {
+    color: #223480;
+}
+
+.log-box h1 {
+    font-family: 'Handlee', cursive;
+    color: crimson;
+    font-weight: bolder;
+}
+
+.log-box>div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.log-box:hover>div:first-child>div:first-child {
+    transition-duration: 2s;
+}
+
+.log-box:hover>div:first-child>div:first-child {
+    transform: rotateZ(-360deg);
+
+}
+
+.log-box:hover>div:first-child>div:first-child>.fa-chess-king {
+    color: violet;
+}
+
+.log-box>div:first-child>div:nth-child(2) {
+    margin-left: 20px;
+    align-self: flex-end;
+}
+
+.log-box>.horizontal-line {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    height: 2px;
+}
+
+.login-third-party-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.login-third-party-box span {
+    font-family: 'Handlee', cursive;
+    color: crimson;
+}
+
+.login-third-party-box>.login-via-icons {
+    padding-left: 10px;
+    transition-duration: 0.5s;
+}
+
+.login-third-party-box>.login-via-icons:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.login-third-party-box>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-third-party-box>div:first-child span {
+    letter-spacing: 1px;
+}

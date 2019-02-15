@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/stylesheets/userPage_main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="./scripts/home-main.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row profile">
+            <div class="col-md-3 profile-sidebar-container">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR USERPIC -->
+                    <div class="profile-userpic">
+                        <!-- <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> -->
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <span id="user-fullname"></span>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <span id="user-email"></span>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <span>Gender : </span>
+                        <span id="user-gender"></span>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <span>Mobile :  </span>
+                        <span id="user-mobile"></span>
+                    </div>
+                    <div class="profile-usertitle-job">
+                        <span>Country : </span>
+                        <span id="user-country"></span>
+                    </div>
+                </div>
+                <!-- END SIDEBAR USER TITLE -->
+                <!-- SIDEBAR BUTTONS -->
+                <!-- END SIDEBAR BUTTONS -->
+                <!-- SIDEBAR MENU -->
+                <div class="profile-usermenu">
+                    <ul class="nav">
+                        <li class="active">
+                            <button id="all-comments-btn" class="sideBar-btn">Show All Comments</button>
+                        </li>
+                        <li>
+                            <button id="my-comments-btn" class="sideBar-btn">Show My Comments</button>
+                        </li>
+                        <li>
+                            <button id="user-logout-btn" class="sideBar-btn" onclick='userLogout'>Logout</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- END MENU -->
+            </div>
+            <div class="col-md-9 main-section">
+                <div id="comment-box">
+                   <div class="comments-container">
+                       
+                   </div>
+                   <div class="comment-post-box">
+                        <textarea name="comment" form="usrform" id='new-comment'>Enter text here...</textarea>
+                        <button id='cmt-post-btn'>POST</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

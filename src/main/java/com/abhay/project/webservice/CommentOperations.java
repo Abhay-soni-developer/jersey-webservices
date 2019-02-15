@@ -13,7 +13,7 @@ import com.abhay.project.webservice.model.DAOs.UserDAO;
 import com.abhay.project.webservice.model.DAOs.CommentDAO;
 
 
-@Path("useroperations")
+@Path("commentoperations")
 //all the comment related operations are performed here
 public class CommentOperations {
 
@@ -23,18 +23,18 @@ public class CommentOperations {
 	@Produces(MediaType.APPLICATION_JSON)
 	//gets the lattest added 10 comments
 	public ArrayList<Comment> getAllComments(@QueryParam("limit") int limit) {
-		UserDAO.initializeCon();
+		CommentDAO.initializeCon();
 		ArrayList<Comment> commentList = CommentDAO.getComments(limit);
 		return commentList;
 	}
 	
 	
 	@GET
-	@Path("/getusercomment")
+	@Path("/getusercomments")
 	@Produces(MediaType.APPLICATION_JSON)
 	//gets user Specific comments
 	public ArrayList<Comment> getUserComments(@QueryParam("userID") int userID, @QueryParam("limit") int limit) {
-		UserDAO.initializeCon();
+		CommentDAO.initializeCon();
 		ArrayList<Comment> commentList = CommentDAO.getUserSpecificComments(userID, limit);
 		return commentList;
 	}
@@ -45,7 +45,7 @@ public class CommentOperations {
 	@Produces(MediaType.APPLICATION_JSON)
 	//this method lets user add comment to comment list
 	public Comment addUserComments(@QueryParam("userID") int userID, @QueryParam("newComment") String newComment) {
-		UserDAO.initializeCon();
+		CommentDAO.initializeCon();
 		System.out.println("user id :: "+ userID + "  comment ::  "+ newComment);
 		Comment comment = new Comment(userID, newComment);
 		if(CommentDAO.putComment(comment)==1) {
